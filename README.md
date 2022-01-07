@@ -24,4 +24,3 @@
 
 ### 참고
 - https://github.com/heecheolman/AlgorithmStudy
-- https://github.com/heecheolman/AlgorithmStudy#%EF%B8%8F-%EC%B0%B8%EA%B0%80%EC%9D%B8%EC%9B%90-%EF%B8%8F
