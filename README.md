@@ -3,6 +3,7 @@
 ### 팀원
 - 김예리 @kinnyeri [블로그](https://velog.io/@kinnyeri)
 - 류정민 @jmyoo55
+- 김민지 @Min-ji99
 ---
 ### 매주
 - 강의 듣기
