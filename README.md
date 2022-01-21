@@ -57,11 +57,14 @@
          - 문제 별 폴더 (ex.BOJ_1998)
          - etc (개인이 푼 문제)
             - 파일 명 : 문제이름및번호_이름.py (ex.1073_yeri.py)
-         - Theory.md : 모아서 정리한 내용 
-         - Probs.md : 모은 예상 면접 질문
+         - Studied
+            - Probs 폴더
+               - 파일 명 : 이름_probs.md
+               - Probs.md (공통으로 모은 문제)
+         - Theory.md
 - 커밋규칙
    - 파일 추가
-      - 개인 : n_본인이름 #이슈번호
+      - 개인 : n_본인이름 [solutions, probs] #이슈번호
       - 공통 : n_master #이슈번호
 ---
 ### 알고리즘 공부 순서
