@@ -1,21 +1,34 @@
 '''
-n이 최대 50이니까 아무리 많이 비교해도 2500번
-한명씩 돌아가면서 n명과 비교
-
-자기보다 덩치 큰 사람이 있을 때마다 count 1증가
-count 값이 등수
+1. 팀 구성
+함수 중 combination을 이용하여 조합을 구함
+서로 다른 n개 중에서 r개를 취하여 조를 만들때 이용
+2. 능력치 차이 계산
 '''
-import sys
-n=int(sys.stdin.readline())
-data = []
-for i in range(n) :
-    a, b=map(int, sys.stdin.readline().split())
-    data.append((a, b))
+import itertools
+
+n=int(input())
+
+people=[i for i in range(n)]
+S=[[0] for _ in range(n)]
 
 for i in range(n) :
-    count=1
-    for j in range(n) :
-        if data[i][0] < data[j][0] and data[i][1] < data[j][1] : #자기보다 덩치 큰 사람 마다 count 1증가
-            count+=1
-    print(count, end=' ')
+    S[i]=list(map(int, input().split()))
 
+#순열을 이용하여 짝수로 2개의 팀을 나눔
+teams=list(itertools.combinations(people, int(n/2)))
+min=100*n*n
+for team in teams : #두 팀의 능력치 차이 계산
+    team_A=0
+    team_B=0
+    for i in team : #순열로 짝 지은 팀에 포함된 사람들의 능력치 구함
+        for j in team:
+            team_A+=S[i][j]
+    not_team=[x for x in range(n) if x not in team] #순열로 구한 팀에 속하지 않는 사람들
+    for i in not_team :
+        for j in not_team :
+            team_B+=S[i][j]
+    
+    if min>abs(team_A-team_B) :
+        min=abs(team_A-team_B)
+
+print(min)
