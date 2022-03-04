@@ -2,7 +2,7 @@
 **진행기간**: 2021.01.07~
 ### 팀원
 - 김예리 @kinnyeri [블로그](https://velog.io/@kinnyeri)
-- 류정민 @jmyoo55
+- 류정민 @charmdew
 - 김민지 @Min-ji99
 ---
 ### 매주
