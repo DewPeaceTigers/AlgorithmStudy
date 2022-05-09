@@ -9,7 +9,7 @@ dp=[[0]*n for i in range(n)]
 ans=0
 def dfs(x, y):
     if dp[x][y]: return dp[x][y]
-    dp[x][y]
+    dp[x][y]=1
     for i in range(4):
         nx=x+dx[i]
         ny=y+dy[i]
